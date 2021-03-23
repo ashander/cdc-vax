@@ -10,3 +10,7 @@ Three outputs are compiled with column `delivery_week` the Monday after which sh
 - [all the processed data](/all_allocations.csv)
 - [the data for the most recent week](/this_week.csv) which **May not be up to date; last update 3/19**
 - [the data summarized by week](/weekly_allocations.csv) this gives the total possible deliverys for each week
+
+## Total allocation visualized
+
+![DC vaccine allocation from CDC](trajectory.png)
