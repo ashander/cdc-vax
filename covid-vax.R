@@ -88,9 +88,32 @@ ggplot(dw) +
   geom_rect(ymin=0, ymax=Inf, xmin=nearest_week, xmax=today(), fill='lightblue', alpha=0.1) +
   geom_line(aes(delivery_week, total )) +
   labs(title="dc vaccine allocation", 
-       subtitle="across all dose types so mixing jj and others; blue = most recent week",
+       subtitle=paste0("across all dose types so mixing jj and others\nblue = ", nearest_week, "---",today()),
        caption="source CDC: https://dev.socrata.com/foundry/data.cdc.gov/b7pe-5nws")
   #eom_col(aes(delivery_week, value, fill=type))
 
-ggsave("trajectory.png", width = 4, height=3)
+ggsave("trajectory.png", width = 5, height=4)
  
+ggplot(dw) + 
+  geom_rect(ymin=0, ymax=Inf, xmin=nearest_week, xmax=today(), fill='lightblue') +
+  geom_col(aes(delivery_week, value, fill=type, color=name)) +
+  scale_fill_brewer(palette="OrRd") +
+  ylab("weekly delivery") +
+  labs(title="dc vaccine allocation", 
+       subtitle=paste0("blue = ", nearest_week, "---",today()),
+       caption="source CDC: https://dev.socrata.com/foundry/data.cdc.gov/b7pe-5nws")
+  #eom_col(aes(delivery_week, value, fill=type))
+ggsave("weekly.png", width = 5, height=4)
+
+
+ggplot(dw %>% filter(name != "second")) + 
+  geom_rect(ymin=0, ymax=Inf, xmin=nearest_week, xmax=today(), fill='lightblue') +
+  geom_col(aes(delivery_week, value, fill=type, color=name)) +
+  scale_fill_brewer(palette="OrRd") +
+  ylab("weekly delivery") +
+  labs(title="dc vaccine allocation (first and full)", 
+       subtitle=paste0("blue = ", nearest_week, "---",today()),
+       caption="source CDC: https://dev.socrata.com/foundry/data.cdc.gov/b7pe-5nws")
+  #eom_col(aes(delivery_week, value, fill=type))
+ggsave("weekly-firstfull.png", width = 5, height=4)
+
