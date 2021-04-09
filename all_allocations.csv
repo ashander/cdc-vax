@@ -1,67 +1,77 @@
 jurisdiction,week_of_allocations,name,value,type,offset,delivery_week,total
-District of Columbia,2020-12-14,first,6825,pfizer,6d 0H 0M 0S,2020-12-20,6825
-District of Columbia,2020-12-21,first,4875,pfizer,6d 0H 0M 0S,2020-12-27,11700
-District of Columbia,2020-12-21,first,12600,moderna,6d 0H 0M 0S,2020-12-27,24300
-District of Columbia,2020-12-28,first,5850,pfizer,6d 0H 0M 0S,2021-01-03,30150
-District of Columbia,2020-12-14,second,6825,pfizer,20d 0H 0M 0S,2021-01-03,36975
-District of Columbia,2020-12-28,first,4400,moderna,6d 0H 0M 0S,2021-01-03,41375
-District of Columbia,2021-01-04,first,4875,pfizer,6d 0H 0M 0S,2021-01-10,46250
-District of Columbia,2020-12-21,second,4875,pfizer,20d 0H 0M 0S,2021-01-10,51125
-District of Columbia,2021-01-04,first,4400,moderna,6d 0H 0M 0S,2021-01-10,55525
-District of Columbia,2021-01-11,first,4875,pfizer,6d 0H 0M 0S,2021-01-17,60400
-District of Columbia,2020-12-28,second,5850,pfizer,20d 0H 0M 0S,2021-01-17,66250
-District of Columbia,2021-01-11,first,4400,moderna,6d 0H 0M 0S,2021-01-17,70650
-District of Columbia,2020-12-21,second,12600,moderna,27d 0H 0M 0S,2021-01-17,83250
-District of Columbia,2021-01-18,first,4875,pfizer,6d 0H 0M 0S,2021-01-24,88125
-District of Columbia,2021-01-04,second,4875,pfizer,20d 0H 0M 0S,2021-01-24,93000
-District of Columbia,2021-01-18,first,4600,moderna,6d 0H 0M 0S,2021-01-24,97600
-District of Columbia,2020-12-28,second,4400,moderna,27d 0H 0M 0S,2021-01-24,102000
-District of Columbia,2021-01-25,first,4875,pfizer,6d 0H 0M 0S,2021-01-31,106875
-District of Columbia,2021-01-11,second,4875,pfizer,20d 0H 0M 0S,2021-01-31,111750
-District of Columbia,2021-01-25,first,4600,moderna,6d 0H 0M 0S,2021-01-31,116350
-District of Columbia,2021-01-04,second,4400,moderna,27d 0H 0M 0S,2021-01-31,120750
-District of Columbia,2021-02-01,first,4875,pfizer,6d 0H 0M 0S,2021-02-07,125625
-District of Columbia,2021-01-18,second,4875,pfizer,20d 0H 0M 0S,2021-02-07,130500
-District of Columbia,2021-02-01,first,6100,moderna,6d 0H 0M 0S,2021-02-07,136600
-District of Columbia,2021-01-11,second,4400,moderna,27d 0H 0M 0S,2021-02-07,141000
-District of Columbia,2021-02-08,first,4875,pfizer,6d 0H 0M 0S,2021-02-14,145875
-District of Columbia,2021-01-25,second,4875,pfizer,20d 0H 0M 0S,2021-02-14,150750
-District of Columbia,2021-02-08,first,6600,moderna,6d 0H 0M 0S,2021-02-14,157350
-District of Columbia,2021-01-18,second,4600,moderna,27d 0H 0M 0S,2021-02-14,161950
-District of Columbia,2021-02-15,first,4875,pfizer,6d 0H 0M 0S,2021-02-21,166825
-District of Columbia,2021-02-01,second,4875,pfizer,20d 0H 0M 0S,2021-02-21,171700
-District of Columbia,2021-02-15,first,7200,moderna,6d 0H 0M 0S,2021-02-21,178900
-District of Columbia,2021-01-25,second,4600,moderna,27d 0H 0M 0S,2021-02-21,183500
-District of Columbia,2021-02-22,first,8190,pfizer,6d 0H 0M 0S,2021-02-28,191690
-District of Columbia,2021-02-08,second,4875,pfizer,20d 0H 0M 0S,2021-02-28,196565
-District of Columbia,2021-02-22,first,7200,moderna,6d 0H 0M 0S,2021-02-28,203765
-District of Columbia,2021-02-01,second,6100,moderna,27d 0H 0M 0S,2021-02-28,209865
-District of Columbia,2021-03-01,first,9360,pfizer,6d 0H 0M 0S,2021-03-07,219225
-District of Columbia,2021-02-15,second,4875,pfizer,20d 0H 0M 0S,2021-03-07,224100
-District of Columbia,2021-03-01,first,7200,moderna,6d 0H 0M 0S,2021-03-07,231300
-District of Columbia,2021-02-08,second,6600,moderna,27d 0H 0M 0S,2021-03-07,237900
-District of Columbia,2021-03-01,full,6000,jj,6d 0H 0M 0S,2021-03-07,243900
-District of Columbia,2021-03-08,first,9360,pfizer,6d 0H 0M 0S,2021-03-14,253260
-District of Columbia,2021-02-22,second,8190,pfizer,20d 0H 0M 0S,2021-03-14,261450
-District of Columbia,2021-03-08,first,7200,moderna,6d 0H 0M 0S,2021-03-14,268650
-District of Columbia,2021-02-15,second,7200,moderna,27d 0H 0M 0S,2021-03-14,275850
-District of Columbia,2021-03-15,first,10530,pfizer,6d 0H 0M 0S,2021-03-21,286380
-District of Columbia,2021-03-01,second,9360,pfizer,20d 0H 0M 0S,2021-03-21,295740
-District of Columbia,2021-03-15,first,7200,moderna,6d 0H 0M 0S,2021-03-21,302940
-District of Columbia,2021-02-22,second,7200,moderna,27d 0H 0M 0S,2021-03-21,310140
-District of Columbia,2021-03-15,full,900,jj,6d 0H 0M 0S,2021-03-21,311040
-District of Columbia,2021-03-22,first,10530,pfizer,6d 0H 0M 0S,2021-03-28,321570
-District of Columbia,2021-03-08,second,9360,pfizer,20d 0H 0M 0S,2021-03-28,330930
-District of Columbia,2021-03-22,first,7200,moderna,6d 0H 0M 0S,2021-03-28,338130
-District of Columbia,2021-03-01,second,7200,moderna,27d 0H 0M 0S,2021-03-28,345330
-District of Columbia,2021-03-22,full,900,jj,6d 0H 0M 0S,2021-03-28,346230
-District of Columbia,2021-03-29,first,12870,pfizer,6d 0H 0M 0S,2021-04-04,359100
-District of Columbia,2021-03-15,second,10530,pfizer,20d 0H 0M 0S,2021-04-04,369630
-District of Columbia,2021-03-29,first,7200,moderna,6d 0H 0M 0S,2021-04-04,376830
-District of Columbia,2021-03-08,second,7200,moderna,27d 0H 0M 0S,2021-04-04,384030
-District of Columbia,2021-03-29,full,4300,jj,6d 0H 0M 0S,2021-04-04,388330
-District of Columbia,2021-03-22,second,10530,pfizer,20d 0H 0M 0S,2021-04-11,398860
-District of Columbia,2021-03-15,second,7200,moderna,27d 0H 0M 0S,2021-04-11,406060
-District of Columbia,2021-03-29,second,12870,pfizer,20d 0H 0M 0S,2021-04-18,418930
-District of Columbia,2021-03-22,second,7200,moderna,27d 0H 0M 0S,2021-04-18,426130
-District of Columbia,2021-03-29,second,7200,moderna,27d 0H 0M 0S,2021-04-25,433330
+District of Columbia,2020-12-14,first,6825,pfizer,0S,2020-12-14,6825
+District of Columbia,2020-12-21,first,4875,pfizer,0S,2020-12-21,11700
+District of Columbia,2020-12-21,first,12600,moderna,0S,2020-12-21,24300
+District of Columbia,2020-12-28,first,5850,pfizer,0S,2020-12-28,30150
+District of Columbia,2020-12-14,second,6825,pfizer,14d 0H 0M 0S,2020-12-28,36975
+District of Columbia,2020-12-28,first,4400,moderna,0S,2020-12-28,41375
+District of Columbia,2021-01-04,first,4875,pfizer,0S,2021-01-04,46250
+District of Columbia,2020-12-21,second,4875,pfizer,14d 0H 0M 0S,2021-01-04,51125
+District of Columbia,2021-01-04,first,4400,moderna,0S,2021-01-04,55525
+District of Columbia,2021-01-11,first,4875,pfizer,0S,2021-01-11,60400
+District of Columbia,2020-12-28,second,5850,pfizer,14d 0H 0M 0S,2021-01-11,66250
+District of Columbia,2021-01-11,first,4400,moderna,0S,2021-01-11,70650
+District of Columbia,2020-12-21,second,12600,moderna,21d 0H 0M 0S,2021-01-11,83250
+District of Columbia,2021-01-18,first,4875,pfizer,0S,2021-01-18,88125
+District of Columbia,2021-01-04,second,4875,pfizer,14d 0H 0M 0S,2021-01-18,93000
+District of Columbia,2021-01-18,first,4600,moderna,0S,2021-01-18,97600
+District of Columbia,2020-12-28,second,4400,moderna,21d 0H 0M 0S,2021-01-18,102000
+District of Columbia,2021-01-25,first,4875,pfizer,0S,2021-01-25,106875
+District of Columbia,2021-01-11,second,4875,pfizer,14d 0H 0M 0S,2021-01-25,111750
+District of Columbia,2021-01-25,first,4600,moderna,0S,2021-01-25,116350
+District of Columbia,2021-01-04,second,4400,moderna,21d 0H 0M 0S,2021-01-25,120750
+District of Columbia,2021-02-01,first,4875,pfizer,0S,2021-02-01,125625
+District of Columbia,2021-01-18,second,4875,pfizer,14d 0H 0M 0S,2021-02-01,130500
+District of Columbia,2021-02-01,first,6100,moderna,0S,2021-02-01,136600
+District of Columbia,2021-01-11,second,4400,moderna,21d 0H 0M 0S,2021-02-01,141000
+District of Columbia,2021-02-08,first,4875,pfizer,0S,2021-02-08,145875
+District of Columbia,2021-01-25,second,4875,pfizer,14d 0H 0M 0S,2021-02-08,150750
+District of Columbia,2021-02-08,first,6600,moderna,0S,2021-02-08,157350
+District of Columbia,2021-01-18,second,4600,moderna,21d 0H 0M 0S,2021-02-08,161950
+District of Columbia,2021-02-15,first,4875,pfizer,0S,2021-02-15,166825
+District of Columbia,2021-02-01,second,4875,pfizer,14d 0H 0M 0S,2021-02-15,171700
+District of Columbia,2021-02-15,first,7200,moderna,0S,2021-02-15,178900
+District of Columbia,2021-01-25,second,4600,moderna,21d 0H 0M 0S,2021-02-15,183500
+District of Columbia,2021-02-22,first,8190,pfizer,0S,2021-02-22,191690
+District of Columbia,2021-02-08,second,4875,pfizer,14d 0H 0M 0S,2021-02-22,196565
+District of Columbia,2021-02-22,first,7200,moderna,0S,2021-02-22,203765
+District of Columbia,2021-02-01,second,6100,moderna,21d 0H 0M 0S,2021-02-22,209865
+District of Columbia,2021-03-01,first,9360,pfizer,0S,2021-03-01,219225
+District of Columbia,2021-02-15,second,4875,pfizer,14d 0H 0M 0S,2021-03-01,224100
+District of Columbia,2021-03-01,first,7200,moderna,0S,2021-03-01,231300
+District of Columbia,2021-02-08,second,6600,moderna,21d 0H 0M 0S,2021-03-01,237900
+District of Columbia,2021-03-01,full,6000,jj,0S,2021-03-01,243900
+District of Columbia,2021-03-08,first,9360,pfizer,0S,2021-03-08,253260
+District of Columbia,2021-02-22,second,8190,pfizer,14d 0H 0M 0S,2021-03-08,261450
+District of Columbia,2021-03-08,first,7200,moderna,0S,2021-03-08,268650
+District of Columbia,2021-02-15,second,7200,moderna,21d 0H 0M 0S,2021-03-08,275850
+District of Columbia,2021-03-15,first,10530,pfizer,0S,2021-03-15,286380
+District of Columbia,2021-03-01,second,9360,pfizer,14d 0H 0M 0S,2021-03-15,295740
+District of Columbia,2021-03-15,first,7200,moderna,0S,2021-03-15,302940
+District of Columbia,2021-02-22,second,7200,moderna,21d 0H 0M 0S,2021-03-15,310140
+District of Columbia,2021-03-15,full,900,jj,0S,2021-03-15,311040
+District of Columbia,2021-03-22,first,10530,pfizer,0S,2021-03-22,321570
+District of Columbia,2021-03-08,second,9360,pfizer,14d 0H 0M 0S,2021-03-22,330930
+District of Columbia,2021-03-22,first,7200,moderna,0S,2021-03-22,338130
+District of Columbia,2021-03-01,second,7200,moderna,21d 0H 0M 0S,2021-03-22,345330
+District of Columbia,2021-03-22,full,900,jj,0S,2021-03-22,346230
+District of Columbia,2021-03-29,first,12870,pfizer,0S,2021-03-29,359100
+District of Columbia,2021-03-15,second,10530,pfizer,14d 0H 0M 0S,2021-03-29,369630
+District of Columbia,2021-03-29,first,7200,moderna,0S,2021-03-29,376830
+District of Columbia,2021-03-08,second,7200,moderna,21d 0H 0M 0S,2021-03-29,384030
+District of Columbia,2021-03-29,full,4300,jj,0S,2021-03-29,388330
+District of Columbia,2021-04-05,first,10530,pfizer,0S,2021-04-05,398860
+District of Columbia,2021-03-22,second,10530,pfizer,14d 0H 0M 0S,2021-04-05,409390
+District of Columbia,2021-04-05,first,7500,moderna,0S,2021-04-05,416890
+District of Columbia,2021-03-15,second,7200,moderna,21d 0H 0M 0S,2021-04-05,424090
+District of Columbia,2021-04-05,full,10800,jj,0S,2021-04-05,434890
+District of Columbia,2021-04-12,first,10530,pfizer,0S,2021-04-12,445420
+District of Columbia,2021-03-29,second,12870,pfizer,14d 0H 0M 0S,2021-04-12,458290
+District of Columbia,2021-04-12,first,7500,moderna,0S,2021-04-12,465790
+District of Columbia,2021-03-22,second,7200,moderna,21d 0H 0M 0S,2021-04-12,472990
+District of Columbia,2021-04-12,full,1300,jj,0S,2021-04-12,474290
+District of Columbia,2021-04-05,second,10530,pfizer,14d 0H 0M 0S,2021-04-19,484820
+District of Columbia,2021-03-29,second,7200,moderna,21d 0H 0M 0S,2021-04-19,492020
+District of Columbia,2021-04-12,second,10530,pfizer,14d 0H 0M 0S,2021-04-26,502550
+District of Columbia,2021-04-05,second,7500,moderna,21d 0H 0M 0S,2021-04-26,510050
+District of Columbia,2021-04-12,second,7500,moderna,21d 0H 0M 0S,2021-05-03,517550

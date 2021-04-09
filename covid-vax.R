@@ -63,20 +63,19 @@ d <- do.call(rbind, ds)
 
 
 
-# rule: 6-day lag from allocation to delivery week starting monday
-dw <- d %>% mutate(offset=ifelse(name=='second' & type=='pfizer', 14+6,
-                                  ifelse(name =='second'&type=='moderna', 6+21, 6))) %>%
+# rule: 0-day lag from week_of_allocation (announced previous tuesday) to delivery week.
+# week_of_allocation gives the monday that deliveries could start on first doses
+dw <- d %>% mutate(offset=ifelse(name=='second' & type=='pfizer', 14,
+                                  ifelse(name =='second'&type=='moderna', 21, 0))) %>%
   mutate(offset=lubridate::days(offset)) %>%
   mutate( delivery_week=week_of_allocations + offset) %>%
   arrange(delivery_week) %>%
   mutate(total=cumsum(value))
 
-# TODO update
-# hard coded from DC gov's most recent update
-update <- as.Date("2021-03-19") 
+update <- today()
 dw %>% filter(delivery_week - update <=0) ->tmp
-nearest_week <- tmp[which.max(tmp$delivery_week - update), "delivery_week"][[1]]
-this_week <- tmp %>% filter(delivery_week == nearest_week)
+nearest_week <- tmp[which.max(tmp$week_of_allocations- update), "week_of_allocations"][[1]]
+this_week <- tmp %>% filter(week_of_allocations == nearest_week)
 
 write_csv(dw, "all_allocations.csv")
 write_csv(dw %>% group_by(delivery_week) %>% summarize(weekly_total=sum(value)), "weekly_allocations.csv")
@@ -85,35 +84,42 @@ write_csv(this_week, "this_week.csv")
 
 
 ggplot(dw) + 
-  geom_rect(ymin=0, ymax=Inf, xmin=nearest_week, xmax=today(), fill='lightblue', alpha=0.1) +
+  geom_rect(ymin=0, ymax=Inf, xmin=nearest_week-days(3), xmax=today(), fill='lightblue', alpha=0.1) +
   geom_line(aes(delivery_week, total )) +
   labs(title="dc vaccine allocation", 
        subtitle=paste0("across all dose types so mixing jj and others\nblue = ", nearest_week, "---",today()),
-       caption="source CDC: https://dev.socrata.com/foundry/data.cdc.gov/b7pe-5nws")
+       caption="bars are *centered* over the allocation date!\nsource CDC: https://dev.socrata.com/foundry/data.cdc.gov/b7pe-5nws")
   #eom_col(aes(delivery_week, value, fill=type))
 
 ggsave("trajectory.png", width = 5, height=4)
  
 ggplot(dw) + 
-  geom_rect(ymin=0, ymax=Inf, xmin=nearest_week, xmax=today(), fill='lightblue') +
+  geom_rect(ymin=0, ymax=Inf, xmin=nearest_week-days(3), xmax=today(), fill='lightblue') +
   geom_col(aes(delivery_week, value, fill=type, color=name)) +
   scale_fill_brewer(palette="OrRd") +
   ylab("weekly delivery") +
   labs(title="dc vaccine allocation", 
        subtitle=paste0("blue = ", nearest_week, "---",today()),
-       caption="source CDC: https://dev.socrata.com/foundry/data.cdc.gov/b7pe-5nws")
+       caption="bars are *centered* over the allocation date!\nsource CDC: https://dev.socrata.com/foundry/data.cdc.gov/b7pe-5nws")
   #eom_col(aes(delivery_week, value, fill=type))
 ggsave("weekly.png", width = 5, height=4)
 
 
 ggplot(dw %>% filter(name != "second")) + 
-  geom_rect(ymin=0, ymax=Inf, xmin=nearest_week, xmax=today(), fill='lightblue') +
-  geom_col(aes(delivery_week, value, fill=type, color=name)) +
+  geom_rect(ymin=0, ymax=Inf, xmin=nearest_week-days(3), xmax=today(), fill='lightblue') +
+  geom_col(aes(delivery_week, value, fill=type, color=name))+
   scale_fill_brewer(palette="OrRd") +
-  ylab("weekly delivery") +
+  ylab("weekly delivery") + 
   labs(title="dc vaccine allocation (first and full)", 
        subtitle=paste0("blue = ", nearest_week, "---",today()),
-       caption="source CDC: https://dev.socrata.com/foundry/data.cdc.gov/b7pe-5nws")
+       caption="bars are *centered* over the allocation date!\nsource CDC: https://dev.socrata.com/foundry/data.cdc.gov/b7pe-5nws")
   #eom_col(aes(delivery_week, value, fill=type))
 ggsave("weekly-firstfull.png", width = 5, height=4)
+
+
+## all states
+dd <- left_join(d, usmap::statepop, by=c(jurisdiction="full"))
+
+  ggplot(dd) + geom_text(aes(pop_2015, value, label=abbr,color=type), size=2.5, alpha=0.7) + facet_wrap(week_of_allocations~name) +
+  labs(title="weekly allocations versus population") + scale_x_log10() + scale_y_log10()
 
